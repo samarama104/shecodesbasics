@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volleyball🏐</title>
+    <style>
+      body {
+        background: #da3049;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 64px;
+        text-decoration-line: underline;
+        font-weight: bold;
+        padding: 0;
+        margin: 20px;
+      }
+      h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        font-weight: lighter;
+        padding: 0;
+        margin: 20px;
+      }
+      img {
+        display: block;
+        margin: 60px auto;
+        max-width: 60%;
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        display: block;
+        color: white;
+        line-height: 1.5;
+        padding: 0px 80px 40px 80px;
+      }
+
+      a {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        color: #ecc058;
+      }
+      a:hover {
+        color: rgb(3, 31, 83);
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+      }
+      span {
+        text-align: center;
+        color: white;
+      }
+      button {
+        font-family: Arial, Helvetica, sans-serif;
+        display: auto;
+        width: 100;
+        display: block;
+        margin: 0 auto 0 auto;
+        color: rgb(3, 31, 83);
+        font-weight: bold;
+        padding: 15px;
+        background: #ecc058;
+        border: 1.25px solid rgb(3, 31, 83);
+        border-radius: 15px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      }
+      button:hover {
+        color: #ecc058;
+        background: rgb(3, 31, 83);
+        border: 1.25px solid #ecc058;
+
+        cursor: pointer;
+        transition: all 100ms ease-in-out;
+      }
+      .learn-rules {
+        text-align: center;
+        color: #ecc058;
+        text-decoration: none;
+      }
+
+      .about-me {
+        text-align: center;
+        color: #ecc058;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Beach Ballers</h1>
+    <h2>🏐 Beach Volleyball Addicts Unite 🏐</h2>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/015/242/original/top-5-balls-for-beach-volleyball.jpeg?1628974086"
+      alt="Beach Volleyball"
+      width="auto"
+    />
+    <p>
+      Beach Volleyball is a sport played by two teams on a sand court divided by
+      a net. The team has three hits for returning the ball (including the block
+      touch). In Beach Volleyball, the team winning a rally scores a point
+      (Rally Point System). When the receiving team wins a rally, it gains a
+      point and the right to serve. The serving player must be alternated every
+      time this occurs.
+
+      <br />
+      <br />
+      Learn more on
+      <a
+        href="https://www.fivb.com/en/beachvolleyball/thegame_bvb_glossary"
+        target="blank"
+        class="learn-rules"
+      >
+        FIVB</a
+      >.
+      <br />
+      <br />
+      <button class="location-button">Learn Where to Play!</button>
+
+      <br />
+      <br />
+
+      Page created by
+      <a
+        href="https://www.linkedin.com/in/samantha-devetski/"
+        target="blank"
+        class="about-me"
+        >Sam Devetski</a
+      >.
+    </p>
+
+    <script>
+      function getLocation() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        alert(
+          "Welcome to the block party, " +
+            name +
+            "! We will contact you with locations soon."
+        );
+      }
+      let locationButton = document.querySelector(".location-button");
+      locationButton.addEventListener("click", getLocation);
+    </script>
+  </body>
+</html>
